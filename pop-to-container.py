@@ -7,6 +7,10 @@ PROFILES = {
     'factchecking': {
         'container_ip': '10.179.127.25',
         'user': 'np278'
+    },
+    'brat': {
+        'container_ip': '10.179.127.60',
+        'user': 'np278'
     }
 }
 
