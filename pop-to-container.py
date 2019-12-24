@@ -11,7 +11,12 @@ PROFILES = {
     'brat': {
         'container_ip': '10.179.127.60',
         'user': 'np278'
+    },
+    'bratd': {
+        'container_ip': '10.179.127.60',
+        'user': 'db57'
     }
+
 }
 
 
