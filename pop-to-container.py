@@ -15,8 +15,11 @@ PROFILES = {
     'bratd': {
         'container_ip': '10.179.127.60',
         'user': 'db57'
+    },
+    'qhs': {
+        'container_ip': '10.179.127.216',
+        'user': 'db57'
     }
-
 }
 
 
@@ -54,7 +57,8 @@ with c.forward_local(
     # assume you use the same pass for both hosts.  May not be valid assumption.
     c2 = fabric.Connection('localhost', user=user, port=local_port, connect_kwargs=options)
 
-    print("Now use your root password for the container.")
+    print("Now use your root password for the container; wait for the prompt.")
+    print("You might receive a prompt about an unknown key fingerprint; if so, enter 'yes' to continue connecting.")
     container_ssh_command = "ssh root@{}".format(profile['container_ip'])
     c2.run(container_ssh_command, pty=True)
 
