@@ -21,7 +21,7 @@ PROFILES = {
         'user': 'db57'
     },
     'intek': {
-        'container_ip': '10.179.127.160',
+        'container_ip': '10.179.127.10',
         'user': 'ca296'
     }
 }
