@@ -19,6 +19,10 @@ PROFILES = {
     'qhs': {
         'container_ip': '10.179.127.216',
         'user': 'db57'
+    },
+    'intek': {
+        'container_ip': '10.179.127.160',
+        'user': 'ca296'
     }
 }
 
@@ -41,6 +45,7 @@ options = {
 }
 c = fabric.Connection('unix.uscs.susx.ac.uk', user=user, connect_kwargs=options)
 
+## xx handle case where local port is busy
 local_port = 49152
 remote_host = 'shl1.inf.susx.ac.uk'
 remote_port = 22
