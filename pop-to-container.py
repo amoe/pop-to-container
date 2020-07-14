@@ -42,9 +42,11 @@ print("I will now prompt you for your password for unix.uscs.susx.ac.uk.")
 password = getpass.getpass()
 options = {
     'password': password,
-    'banner_timeout': 200,
-    'timeout': 200,
-    'auth_timeout': 200
+    # shouldn't be needed, but can be configured; these are passed through to
+    # paramiko.
+    #'banner_timeout': 200,
+    #'timeout': 200,
+    #'auth_timeout': 200
 }
 c = fabric.Connection('unix.uscs.susx.ac.uk', user=user, connect_kwargs=options)
 
