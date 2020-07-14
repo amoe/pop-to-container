@@ -41,7 +41,10 @@ print("Loaded profile for user {}.".format(user))
 print("I will now prompt you for your password for unix.uscs.susx.ac.uk.")
 password = getpass.getpass()
 options = {
-    'password': password
+    'password': password,
+    'banner_timeout': 200,
+    'timeout': 200,
+    'auth_timeout': 200
 }
 c = fabric.Connection('unix.uscs.susx.ac.uk', user=user, connect_kwargs=options)
 
