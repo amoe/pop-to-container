@@ -18,3 +18,10 @@ Where PROFILE is `factchecking`, or `brat`.
 It's not working on windows at the moment.  I think there's some kind of issue
 with the tunnel setup.  This could possibly be addressed by using the
 `sshtunnel` pypi package instead of fabric.
+
+
+## Error: paramiko.ssh_exception.BadAuthenticationType: Bad authentication type; allowed types: ['publickey', 'gssapi-keyex', 'gssapi-with-mic']
+
+This means you do not have your privatekey existing on unix in the right
+location or with the right mode.
+
