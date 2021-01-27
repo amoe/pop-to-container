@@ -24,6 +24,10 @@ PROFILES = {
         'container_ip': '10.179.127.10',
         'user': 'ca296'
     }
+    'shaunphd': {
+        'container_ip': '10.179.127.33',
+        'user': 'sr410'
+    }
 }
 
 
